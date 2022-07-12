@@ -1,6 +1,7 @@
 html {
   min-height: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -9,26 +10,41 @@ body {
   min-height: 100%;
   padding-bottom: 5rem;
 }
+
 .titulo {
   font-weight: bold;
   font-size: 3rem;
   text-transform: uppercase;
   color: white;
 }
+
 .container {
-    background-color: white;
+  background-color: white;
 }
+
 header {
   margin-top: 3rem;
 }
+
 header h1 {
   color: white;
 }
+
 .tabla {
+  width: 533px;
   overflow: overlay;
   height: 250px;
-  width: 500px;
 }
+
+@media (max-width: 767px) {
+  .tabla {
+    width: 480px;
+    margin: 10px 10px 10px -30px;
+  }
+}
+
+
+
 .acciones {
   display: flex;
   gap: 1rem;

@@ -12,48 +12,41 @@
 
 <body>
 
-  <h2 class="text-center my-5 titulo">CHALLENGE</h2>
+  <h2 class="text-center my-5 titulo">CHALLENGE JKMate</h2>
   <div class="container mt-5 p-5">
     <div id="contenido" class="row">
       <div class="col-md-6 agregar-cita">
         <form id="nueva-cita">
           <legend class="mb-4">Datos de las personas</legend>
-          <!-- <div class="form-group row">
-            <label class="col-sm-4 col-lg-4 col-form-label">ID:</label>
-            <div class="col-sm-8 col-lg-8">
-              <input type="number" id="myId" name="myId" class="form-control" placeholder="Documento de identificación">
-            </div>
-          </div> -->
           <div class="form-group row">
             <label class="col-sm-4 col-lg-4 col-form-label">Nombre:</label>
             <div class="col-sm-8 col-lg-8">
-              <input required type="text" id="nombre" name="nombre" class="form-control"
-                placeholder="Ingrese el nombre">
+              <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingrese el nombre">
             </div>
           </div>
           <div class="form-group row">
             <label class="col-sm-4 col-lg-4 col-form-label">Apellido:</label>
             <div class="col-sm-8 col-lg-8">
-              <input required type="text" id="apellido" name="apellido" class="form-control"
-                placeholder="Ingrese el apellido">
+              <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Ingrese el apellido">
             </div>
           </div>
           <div class="form-group row">
             <label class="col-sm-4 col-lg-4 col-form-label">DNI:</label>
             <div class="col-sm-8 col-lg-8">
-              <input required type="number" id="dni" name="dni" class="form-control"
-                placeholder="Documento de identificación">
+              <input type="text" id="dni" name="dni" class="form-control" placeholder="Documento de identificación">
             </div>
           </div>
           <div class="form-group">
-            <button onclick="agregarPersonas()" type="submit" class="btn btn-success w-100 d-block">Agregar</button>
+            <div id="btnFormulario">
+              <button onclick="agregarPersonas()" type="submit" class="btn btn-success w-100 d-block">Agregar</button>
+            </div>
           </div>
         </form>
       </div>
       <div class="col-md-6">
         <h2 id="administra" class="mb-4">Administra las personas</h2>
         <div class="container tabla">
-          <table class="table">
+          <table id="tablaCRUD" class="table">
             <thead class="thead-dark">
               <tr>
                 <th scope="col">#</th>
@@ -64,17 +57,6 @@
               </tr>
             </thead>
             <tbody id="tbodyPersona">
-
-              <!-- <tr>
-                        <th scope="row">6</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>33333333</td>
-                        <td class="acciones">
-                          <a class="btn btn-warning" onclick="editarPersonas()" href="">Editar</a>
-                          <a class="btn btn-danger" onclick="eliminarPersonas()" href="">Eliminar</a>
-                        </td>
-                      </tr> -->
             </tbody>
           </table>
         </div>
