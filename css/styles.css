@@ -11,6 +11,20 @@ body {
   padding-bottom: 5rem;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #520138;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #281d1d;
+  border-radius: 50px;
+}
+
 .titulo {
   font-weight: bold;
   font-size: 3rem;
@@ -43,7 +57,22 @@ header h1 {
   }
 }
 
+#administra {
+  text-align: center;
+}
 
+.error {
+  background-color: rgb(167, 2, 2);
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border-radius: 39px;
+  margin-bottom: 18px;
+  padding: 11px 1px 11px 1px;
+  font-family: sans-serif;
+}
 
 .acciones {
   display: flex;
